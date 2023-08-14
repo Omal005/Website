@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy tickets</title>
+    <link rel="stylesheet" href="./tickets.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <section class="tktmain">
+        <div class="container">
+        <div class="left-half">
+        <!--navigation bar-->
+               <nav class="tickets">
+
+                <ul class="back">
+                    <li><a href="./Details.html">Back</a></li>
+            
+                    
+                </ul>
+
+                   <!--logo-->
+                  
+                   <a href="#" class="logo"><img src="./logo.png" alt="Company logo"></a>
+                   
+       
+                   <!--menu-->
+                   <ul class="menu">
+                      
+                       <li><a href="./Home.html">Home</a></li>
+                       
+                   </ul>
+               </nav>
+
+               <!--content on main background image-->
+               <div class="tkt-content">
+               
+                <h1>BUY TICKETS</h1>
+
+                <div class="right-half">
+                    <nav class="menu-2">
+                        <ul>
+                            <li><a href="./tickets.html">Date&nbsp&nbsp></a></li>
+                            <li><a href="./Details.html">Details&nbsp&nbsp></a></li>
+                            <li><a href="./Payment.html" id="Date">Payment&nbsp&nbsp></a></li>
+                            <li><a href="./Confirmation.html">Confirmation&nbsp&nbsp></a></li>
+                        </ul>
+
+                    </nav>
+
+                    <div class="payment-section">
+                        <form id="paymentform">
+                          <div>
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="cardnumber" required placeholder="XXXX XXXX XXXX XXXX">
+                          </div>
+                          <div>
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="text" id="expirydate" required placeholder="MM/YY">
+                          </div>
+                          <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required maxlength="3" placeholder="Ex : 123" >
+                          </div>
+                          <div>
+                            <label for="cardholder-name">Cardholder Name</label>
+                            <input type="text" id="cardholdername" required placeholder="Ex : John">
+                          </div>
+                          <button type="submit">Pay Now</button>
+                        </form>
+                      </div>
+
+                </div>
+               </div>
+        </div>
+        </div>
+    </section>
+
+<script src="./Payment.js"></script>
+ </body>
+</html>

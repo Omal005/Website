@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tickets.css">
+    <title>Buy tickets</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <section class="tktmain">
+        <div class="container">
+        <div class="left-half">
+        <!--navigation bar-->
+               <nav class="tickets">
+
+                <ul class="back">
+                    <li><a href="./Payment.html">Back</a></li>
+            
+                    
+                </ul>
+
+                   <!--logo-->
+                  
+                   <a href="#" class="logo"><img src="./logo.png" alt="Company logo"></a>
+                   
+       
+                   <!--menu-->
+                   <ul class="menu">
+                      
+                       <li><a href="./Home.html">Home</a></li>
+                       
+                   </ul>
+               </nav>
+
+               <!--content on main background image-->
+               <div class="tkt-content">
+               <section class="finaltable">
+                <div class="summary-t">
+                    <table id="finaltable">
+                        <tr>
+                            <th colspan="2">Details</th>
+                        </tr>
+                        <tr>
+                            <td>Date : </td>
+                            <td><label id="selectedDateLabel"></label> <label id="monthYearLabel"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Time : </td>
+                            <td><label id="finalout"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Duration : </td>
+                            <td><label id="duration">1 </label>hours</td>
+                        </tr>
+                        <tr>
+                            <td>Name : </td>
+                            <td><label id="myLabel"></label></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail address : </td>
+                            <td><label id="ml"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Gender : </td>
+                            <td><label id="gen"></label></td>
+                        </tr>
+                        <tr class="ticket-charges">
+                            <td id="table-tkt">Tickets</td>
+                            <td id="table-chrg">Charges</td>
+                        </tr>
+                        <tr>
+                            <td><label id="sl-a"></label> SL Adult</td>
+                            <td><label id="sslap"></label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="sl-c"></label> SL Child</td>
+                            <td><label id="sslcp"></label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="f-a"></label> Foreigner adult</td>
+                            <td><label id="ffap"></label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="f-c"></label> Foreigner child</td>
+                            <td><label id="ffcp"></label></td>
+                        </tr>
+                        <tr>
+                            <td><label id="infant"></label> Infant</td>
+                            <td><span>Free</span></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td><label id="tot"></label></td>
+                        </tr>
+            
+            
+                    </table>
+                </div>
+            </section>
+         
+
+                <div class="right-half">
+                    <nav class="menu-2">
+                        <ul>
+                            <li><a href="./tickets.html">Date&nbsp&nbsp></a></li>
+                            <li><a href="./Details.html">Details&nbsp&nbsp></a></li>
+                            <li><a href="./Payment.html">Payment&nbsp&nbsp></a></li>
+                            <li><a href="./Confirmation.html"  id="Date">Confirmation&nbsp&nbsp></a></li>
+                        </ul>
+
+                    </nav>
+
+                    <div class="modal-overlay" id="successModal">
+                        <div class="modal-content">
+                            <span class="close-button" id="closeButton">&times;</span>
+                            <h2>Payment Successful!</h2>
+                            <p>Your payment has been successfully processed.</p>
+                        </div>
+                    </div>
+                
+                    <div class="confirmpayment">
+                        <button id="cont">CONFIRM THE PAYMENT</button>
+                    </div>
+
+                    <div>
+                        <table id="Confirmationtable"></table>
+                    </div>
+
+    
+    <script src="./confirm.js"></script>
+</body>
+</html>

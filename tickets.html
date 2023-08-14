@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy tickets</title>
+    <link rel="stylesheet" href="./tickets.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <section class="tktmain">
+        <div class="container">
+        <div class="left-half">
+        <!--navigation bar-->
+               <nav class="tickets">
+
+                <ul class="back">
+                    <li><a href="./hikkaduwa.html">Back</a></li>
+            
+                    
+                </ul>
+
+                   <!--logo-->
+                  
+                   <a href="#" class="logo"><img src="./logo.png" alt="Company logo"></a>
+                   
+       
+                   <!--menu-->
+                   <ul class="menu">
+                      
+                       <li><a href="./Home.html">Home</a></li>
+                       
+                   </ul>
+               </nav>
+
+               <!--content on main background image-->
+               <div class="tkt-content">
+               
+                <h1>BUY TICKETS</h1>
+
+                <div class="right-half">
+                    <nav class="menu-2">
+                        <ul>
+                            <li><a href="#" id="Date">Date&nbsp&nbsp></a></li>
+                            <li><a href="./Details.html">Details&nbsp&nbsp></a></li>
+                            <li><a href="./Payment.html">Payment&nbsp&nbsp></a></li>
+                            <li><a href="./Confirmation.html">Confirmation&nbsp&nbsp></a></li>
+                        </ul>
+
+                    </nav>
+
+                   <section class="cal">
+                    <div class="calendar">
+                        <div class="header">
+                          <button id="prevBtn">&lt;</button>
+                          <h2 id="monthYear"></h2>
+                          <button id="nextBtn">&gt;</button>
+                        </div>
+                        <div class="days">
+                          <div>Sun</div>
+                          <div>Mon</div>
+                          <div>Tue</div>
+                          <div>Wed</div>
+                          <div>Thu</div>
+                          <div>Fri</div>
+                          <div>Sat</div>
+                        </div>
+                        <div class="dates"></div>
+                      </div>
+                  
+                </section>
+
+                   </div>
+                
+               </div>
+
+              
+
+            </div>
+
+        </div>
+    </section>
+
+    <h2 id="guest-head">Select the number of guests and time slot</h2>
+    <section class="main-container">
+    <div class="guest-type">
+        
+<div class="sl-adult">
+    <h3>SL&nbsp;ADULT</h3>
+    <div class="plus-minus">
+    <span class="minus">-</span>
+    <span class="num">01</span>
+    <span class="plus">+</span>
+</div>
+</div>
+
+            <div class="sl-adult">
+                <h3>SL&nbsp;CHILD</h3>
+                <div class="plus-minus">
+                <span class="minusa">-</span>
+                <span class="numa">01</span>
+                <span class="plusa">+</span>
+            </div>
+            </div>
+
+            <div class="sl-adult">
+                <h3>FOREIGNER&nbsp;ADULT</h3>
+                <div class="plus-minus">
+                <span class="minusb">-</span>
+                <span class="numb">01</span>
+                <span class="plusb">+</span>
+            </div>
+            </div>
+
+            <div class="sl-adult">
+                <h3>FOREIGNER&nbsp;CHILD</h3>
+                <div class="plus-minus">
+                <span class="minusc">-</span>
+                <span class="numc">01</span>
+                <span class="plusc">+</span>
+            </div>
+            </div>
+
+            <div class="sl-adult">
+                <h3>INFANT</h3>
+                <div class="plus-minus">
+                <span class="minusd">-</span>
+                <span class="numd">01</span>
+                <span class="plusd">+</span>
+            </div>
+            </div>
+    </div>
+    
+    <div class="dropdown">
+        <select id="timeSlots"></select>
+      </div>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr class="tr">
+              <th class="th">Category</th>
+              <th class="th">Charge per Normal hour (USD)</th>
+              <th class="th">Charge per Peak hour (USD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr">
+              <td class="td">Foreigner Adult</td>
+              <td class="td">10</td>
+              <td class="td">13</td>
+            </tr>
+            <tr class="tr">
+              <td class="td">Foreigner Child</td>
+              <td class="td">5</td>
+              <td class="td">8</td>
+            </tr>
+            <tr class="tr">
+              <td class="td">SL Adult</td>
+              <td class="td">4</td>
+              <td class="td">6</td>
+            </tr>
+            <tr class="tr">
+              <td class="td">SL Child</td>
+              <td class="td">2</td>
+              <td class="td"class="td">3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+</section>
+
+<h2 id="guest-head">Summary</h2>
+
+<section class="summary-table">
+    <h2>Summary</h2>
+    <div class="summary-t">
+        <table id="table">
+            <tr>
+                <th colspan="2">Details</th>
+            </tr>
+            <tr>
+                <td>Date : </td>
+                <td><label id="selectedDateLabel"></label> <label id="monthYearLabel"></label></td>
+            </tr>
+            <tr>
+                <td>Time : </td>
+                <td><label id="timeout"></label></td>
+            </tr>
+            <tr>
+                <td>Duration : </td>
+                <td><label id="duration">1 </label>hours</td>
+            </tr>
+            <tr class="ticket-charges">
+                <td id="table-tkt">Tickets</td>
+                <td id="table-chrg">Charges</td>
+            </tr>
+            <tr>
+                <td><label id="sl-a"></label> SL Adult</td>
+                <td><span class="slap"></span></td>
+            </tr>
+            <tr>
+                <td><label id="sl-c"></label> SL Child</td>
+                <td><span class="slcp"></span></td>
+            </tr>
+            <tr>
+                <td><label id="f-a"></label> Foreigner adult</td>
+                <td><span class="fap"></span></td>
+            </tr>
+            <tr>
+                <td><label id="f-c"></label> Foreigner child</td>
+                <td><span class="fcp"></span></td>
+            </tr>
+            <tr>
+                <td><label id="infant"></label> Infant</td>
+                <td><span>Free</span></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><label id="tottktprice"></label></td>
+            </tr>
+
+
+        </table>
+    </div>
+
+</section>
+
+<button type="submit" id="cont">CONTINUE WITH PURCHASE</button>
+
+
+<footer class="kosgoda">
+
+    <div class="footer-content">
+        <h3>Royal hatcheries</h3>
+        <p>Together, we strive to make a positive impact on marine ecosystems and raise awareness about the importance of turtle conservation. Be part of our team and contribute to the future of these fascinating sea creatures!</p>
+        <ul class="socials">
+            <li><a href="#"><img src="./facebook logo.png" alt="" class="fb"></a></li>
+            <li><a href="#"><img src="./instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./twitter.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        <p>copyright &copy;2020 Royal hatcheries, desigened by K&O Group</p>
+    </div>
+    
+   </footer>
+
+
+           
+
+    
+<script src="./tickets.js"></script>
+
+
+</body>
+</html>

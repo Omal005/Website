@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy tickets</title>
+    <link rel="stylesheet" href="./tickets.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <section class="Dtktmain">
+        <div class="container">
+        <div class="Dleft-half">
+        <!--navigation bar-->
+               <nav class="tickets">
+
+                <ul class="back">
+                    <li><a href="./tickets.html">Back</a></li>
+            
+                    
+                </ul>
+
+                   <!--logo-->
+                  
+                   <a href="#" class="logo"><img src="./logo.png" alt="Company logo"></a>
+                   
+       
+                   <!--menu-->
+                   <ul class="menu">
+                      
+                       <li><a href="./Home.html">Home</a></li>
+                       
+                   </ul>
+               </nav>
+
+               <!--content on main background image-->
+               <div class="tkt-content">
+               
+                <h1>BUY TICKETS</h1>
+
+                <div class="Dright-half">
+                  
+                    <nav class="menu-2">
+                        <ul>
+                            <li><a href="./tickets.html">Date&nbsp&nbsp></a></li>
+                            <li><a href="./Details.html"  id="Date">Details&nbsp&nbsp></a></li>
+                            <li><a href="./Payment.html">Payment&nbsp&nbsp></a></li>
+                            <li><a href="./Confirmation.html">Confirmation&nbsp&nbsp></a></li>
+                        </ul>
+
+                    </nav>
+                    
+                    <div class="container-in">
+                        <form id="registration-form">
+                        <div>
+                          <label for="name">Full name <span>(Please enter your name as in ID)</span></label>
+                          <input type="text" required id="name">
+                          <p id="name-error" class="error-message"></p>
+                        </div>
+                        <div>
+                          <label for="mobnum">Mobile number <span>We reach out to you via SMS</span></label>
+                         <div class="teldiv">
+                          <select id="country-code">
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+44">+44 (UK)</option>
+                           <option value="+91">+91 (IND)</option>
+                           <option value="+94">+94 (SL)</option>
+                           <option value="+66">+66 (TL)</option>
+                          <option value="+250">+250 (RW)</option>
+                          <option value="+48">+48 (PL)</option>
+                          <option value="+43">+43 (AFG)</option>
+                         <option value="+47">+47 (NO)</option>
+                         <option value="+52">+52 (MEX)</option>
+                         <option value="+850">+850 (KP)</option>
+                        <option value="+81">+81 (JP)</option>
+                        <option value="+972">+972 (ISL)</option>
+                        <option value="+299">+299 (GL)</option>
+                       <option value="+20">+20 (EG)</option>
+                       <option value="+33">+33 (FR)</option>
+                       <option value="+45">+45 (DK)</option>
+                      <option value="+32">+32 (BE)</option>
+                      <option value="+1">+1 (CA)</option>
+                    
+                           
+                          </select>
+                      <input type="tel" required id="mobnum" maxlength="9" pattern="[0-9]{0,9}">
+                        </div>
+                        </div>
+                        <div>
+                          <label for="mail">E-mail address <span>We'll send your tickets here</span></label>
+                          <input type="email" required id="mail">
+                        </div>
+                        <div>
+                          <label for="confm">Confirm E-mail address <span>just to ensure we got this right</span></label>
+                          <input type="email" required id="confm">
+                        </div>
+                      </div>
+                      <div id="error-messages"></div>
+
+                      <div class="gender-selector">
+                        <label for="gender">Gender:</label>
+                        <select id="gender">
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="prefer no to say">Prefer not to say</option>
+                        </select>
+                      </div>
+
+
+                      <div>
+                        <button type="submit" id="continue-to-pay">CONTINUE</button>
+                      </div>
+                    </form>
+                    
+                </div>
+
+                
+               </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="./Details.js"></script>
+</body>
+</html>
